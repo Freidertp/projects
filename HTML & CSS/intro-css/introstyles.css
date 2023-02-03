@@ -1,5 +1,5 @@
-/*Estilos para colores */
-.colores{
+/*Styles for colors */
+.colors{
 
     color: #C76D7E;
 }
@@ -19,29 +19,30 @@
     color: rgba(10, 10, 10,0.2)
 }
 
-/* Fondos */
+/* Backgrounds */
 
-.fondo{
+.background{
 
     background-color: #C76D7E;
     background-image: url("https://blz-contentstack-images.akamaized.net/v3/assets/blt9c12f249ac15c7ec/blt1dccbccbb1e5a40e/62505215c681894bef560fc0/og-image.jpg");
     background-position: top;
 }
 
-/* Tamaños */
-.ancho{
+/* Sizes */
+.width{
 
     background-color:#C76D7E; 
-    width: 100px;
+    width: 150px;
 }
 
-.alto{
+.height{
 
     background-color: #BCE784;
-    height: 200px;
+    height: 50px;
 }
 
-.tarjeta{
+
+.postcard{
 
     border-style: solid;
     border-color: rgb(150, 150, 150);
@@ -50,4 +51,12 @@
     padding: 10px 20px;
     /*padding: 10px 20px 30px 40px;*/
     /*margin: 10px 20px 30px 40px;*/
+}
+
+/* Uppercase */
+
+.header{
+
+    font-size: larger;
+    text-transform: uppercase;
 }

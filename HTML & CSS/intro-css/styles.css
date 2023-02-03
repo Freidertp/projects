@@ -2,19 +2,19 @@ h1 {
     color: aquamarine;
 }
 
-#primera-noticia{
+#first-news{
 
     font-size: xx-large;
     color: blueviolet;
 }
 
-#segunda-noticia{
+#second-news{
     
-    color: darkblue;
-    font-size: medium;
+    color: darkslateblue;
+    font-size: 30px;
 }
 
-.encabezado{
+.header{
 
     font-size: larger;
     text-transform: uppercase;
