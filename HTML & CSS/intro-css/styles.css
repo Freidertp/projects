@@ -1,0 +1,25 @@
+h1 {
+    color: aquamarine;
+}
+
+#primera-noticia{
+
+    font-size: xx-large;
+    color: blueviolet;
+}
+
+#segunda-noticia{
+    
+    color: darkblue;
+    font-size: medium;
+}
+
+.encabezado{
+
+    font-size: larger;
+    text-transform: uppercase;
+}
+.warning{
+
+    color: red;
+}
