@@ -2,7 +2,6 @@
 .galeria{
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 .galeria img{
