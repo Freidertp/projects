@@ -1,0 +1,19 @@
+.btn{
+  width: 5rem;
+  height: 5rem;
+  font-size: 1rem;
+  &:hover{
+    background-color: greenyellow;
+  }
+}
+
+.btn-2{
+  @extend .btn;
+  margin: 0.5rem;
+  border-radius: 0.3rem;
+  &:hover{
+    background-color: pink;
+  }
+
+}
+

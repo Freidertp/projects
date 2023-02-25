@@ -1,0 +1,33 @@
+@use "mixins";
+.content{
+  width: 100%;
+  background-color: aqua;
+  min-height: 100vh;
+}
+
+h2{
+  margin: 0;
+  @include mixins.formato-texto(pink);
+}
+
+p{
+  @include mixins.formato-texto ();
+}
+
+.listado{
+  width: 10rem;
+  background-color: green;
+  padding: 0.5rem;
+  ul{
+  margin: 0 0.5rem;
+    li{
+      list-style: none;
+      &:hover{
+        background-color: white;
+      }
+      &:active{
+        background-color: black;
+      }
+    }
+  }
+}
