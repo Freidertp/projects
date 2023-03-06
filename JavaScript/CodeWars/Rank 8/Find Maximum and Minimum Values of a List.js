@@ -1,8 +1,6 @@
-let list = [1, 5, 3, 99, -8];
+/*Write a program in JS to find the maximum and minimum elements in an array.*/
 
 function maxAndMinNumber(list) {
   console.log(Math.min(...list));
   console.log(Math.max(...list));
 }
-
-maxAndMinNumber(list);
