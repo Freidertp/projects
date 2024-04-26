@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 # projects
+=======
+
+>>>>>>> master

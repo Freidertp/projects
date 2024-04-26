@@ -1,0 +1,450 @@
+* {
+  margin: 0;
+  font-family: 'Inter';
+}
+
+body {
+  background-color: #F3F5FC;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.imglogo {
+  margin: 2.5rem 2.5rem 2.5rem 1rem;
+  width: 7.5rem;
+  height: 3rem;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.inputarea {
+  padding: 2.5rem 2.5rem 0 2.5rem;
+  font-family: 'Inter';
+  position: relative;
+
+}
+
+.inputmic {
+  width: 2rem;
+  height: 2rem;
+
+  position: absolute;
+  top: -2.5rem;
+  right: 0.05rem;
+
+  transition: .1s transform ease-in-out;
+  animation: none;
+
+  &.inputmic:hover {
+    cursor: pointer;
+  }
+
+}
+
+.textareainput {
+  width: 42.25rem;
+  height: 18rem;
+
+  font-size: 2em;
+  color: #0A3871;
+  background-color: #F3F5FC;
+
+  padding: 0;
+
+  border: none;
+  outline: none;
+  resize: none;
+
+  &.textareainput::placeholder {
+    color: #0A3871;
+    opacity: 0.8;
+  }
+}
+
+.inputarea .notice {
+  padding-top: 15rem;
+  color: #495057;
+  font-size: 1em;
+  font-family: 'Inter';
+
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.inputarea .notice span {
+  height: 1.2rem;
+  opacity: 0.8;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  gap: 1.5rem;
+
+}
+
+.button1 {
+  width: 20rem;
+  height: 4.1rem;
+
+  background-color: #0A3871;
+  color: white;
+  border-radius: 1.5rem;
+  font-size: 1em;
+
+  transition: transform .1s ease-in-out;
+
+  &.button1:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+}
+
+.button2 {
+  width: 20rem;
+  height: 4.1rem;
+
+  border: 1px solid #0A3871;
+  color: #0A3871;
+  border-radius: 1.5rem;
+  font-size: 1em;
+
+  transition: transform .1s ease-in-out;
+
+  &.button2:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+}
+
+.outputarea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 25rem;
+
+  position: relative;
+
+
+  background-color: white;
+  box-shadow: 0 1.5rem 2rem -0.5rem rgba(0, 0, 0, 0.08);
+  border-radius: 2rem;
+
+}
+
+.volume {
+  display: none;
+
+  width: 2rem;
+  height: 1.5rem;
+
+  position: absolute;
+  top: 0.5rem;
+  left: 1.8rem;
+
+  opacity: 0.7;
+
+  transition: .1s transform ease-in-out;
+  animation: none;
+
+  &.volume:hover {
+    cursor: pointer;
+  }
+}
+
+.textareaoutput {
+  display: none;
+  text-align: center;
+
+
+  width: 21rem;
+  height: 100%;
+  padding: 2rem 2rem 0 2rem;
+
+  font-family: 'Inter';
+  font-size: 1.5em;
+  color: #495057;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.aluracharacter {
+  width: 21rem;
+  height: 19rem;
+}
+
+.outputarea .notice {
+  width: 21rem;
+  height: 7.6rem;
+  padding: 0;
+  gap: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.outputarea .notice .span1 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #343A40;
+}
+
+.outputarea .notice .span2 {
+  font-size: 1em;
+  font-weight: 400;
+  color: #495057;
+}
+
+.button {
+  display: none;
+  position: relative;
+
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.button3 {
+  width: 21rem;
+  height: 4.1rem;
+
+  background-color: white;
+  border: 1px solid #0A3871;
+  border-radius: 1.5rem;
+
+  color: #0A3871;
+  font-size: 1em;
+
+  transition: .1s transform ease-in-out;
+
+  &.button3:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+}
+
+.footer {
+  text-align: center;
+  margin-top: 0.6rem;
+}
+
+.footer .span {
+  margin-bottom: 1.25rem;
+}
+
+.footer span {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #495057;
+}
+
+.contactme {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 3rem;
+}
+
+.contactme a {
+  transition: transform .3s ease-in-out;
+}
+
+.contactme a:hover {
+  animation: pulse .5s ease-in-out infinite;
+
+
+  transform: scale(1.02);
+}
+
+.contactme img {
+  width: 1.8rem;
+  height: auto;
+}
+
+
+/* Animations */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width:1200px) {
+
+  .container {
+    overflow: auto;
+  }
+
+  .imglogo {
+    margin: 1rem 0 1rem 0;
+    justify-content: center;
+  }
+
+  .inputarea {
+    padding: 0;
+    width: 43rem;
+  }
+
+  .inputarea .notice {
+    padding-top: 2.5rem;
+  }
+
+  .outputarea {
+    width: 43rem;
+  }
+
+  .textareaoutput {
+    width: 90%;
+    height: 6.2rem;
+
+    border-radius: 0;
+    padding: 0;
+    margin: 2rem 2rem 0 2rem;
+  }
+
+  .aluracharacter {
+    display: none !important;
+  }
+
+  .outputarea .notice {
+    width: 100%;
+    height: 8.3rem;
+  }
+
+  .outputarea .notice .span2 {
+    line-height: 150%;
+  }
+
+  .button {
+    width: 95%;
+  }
+
+  .button3 {
+    width: 100%;
+  }
+
+  .footer {
+    margin-top: 0.6rem;
+  }
+}
+
+@media screen and (max-width:700px) {
+
+  body {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    width: 95%;
+    overflow: auto;
+
+  }
+
+  .content {
+    padding: 0;
+    width: 100%;
+    padding-bottom: 0;
+    flex-direction: column;
+    place-items: center;
+  }
+
+  .inputarea {
+    padding: 0;
+    width: 100%;
+  }
+
+  .textareainput {
+    width: 100%;
+    min-height: 3rem;
+    font-size: 1.8em;
+  }
+
+  .inputarea .notice {
+    padding-top: 0;
+  }
+
+  .buttons {
+    width: 100%;
+  }
+
+  .button1 {
+    width: 100%;
+
+    font-size: 1em;
+
+    &.button1:hover {
+      transform: none;
+    }
+  }
+
+  .button2 {
+    width: 100%;
+
+    &.button2:hover {
+      transform: none;
+    }
+  }
+
+  .outputarea {
+    padding: 0;
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width:430px) {
+  .inputarea .notice {
+    margin-top: 1rem;
+
+  }
+
+  .textareaoutput {
+    height: 20rem;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .outputarea .notice .span1 {
+    font-size: 1em;
+  }
+
+  .outputarea .notice .span2 {
+    font-size: 0.7em;
+  }
+
+}
